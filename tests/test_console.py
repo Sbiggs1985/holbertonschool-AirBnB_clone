@@ -1,42 +1,4 @@
-#!/usr/bin/python3
-"""Module for testing the HBNBCommand Class"""
-import unittest
-from console import HBNBCommand
-from unittest.mock import patch
-from io import StringIO
 
-
-class Test_Console(unittest.TestCase):
-    """Test the HBNBCommand Console"""
-
-#     def test_help(self):
-#         """Tests the help commmand"""
-#         with patch('sys.stdout', new=StringIO()) as f:
-#             HBNBCommand().onecmd("help")
-#         string = """
-# Documented commands (type help <topic>):
-# ========================================
-# EOF  all  count  create  destroy  help  quit  show  update
-# """
-#         msg = f.getvalue()
-#         self.assertEqual(string, msg)
-
-    def test_help(self):
-        """Tests the help command."""
-        with patch('sys.stdout', new=StringIO()) as f:
-            HBNBCommand().onecmd("help")
-        s = """
-Documented commands (type help <topic>):
-========================================
-EOF  all  count  create  destroy  help  quit  show  update\n
-"""
-        self.assertEqual(s, f.getvalue())
-
-    # Test cases for quit
-
-    def test_do_quit(self):
-        """Tests the quit commmand"""
-        with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("quit")
         # modelling what happens when someone types `quit`
         msg = f.getvalue()
