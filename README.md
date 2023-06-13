@@ -1,6 +1,3 @@
-# The hbnb Clone Project
-![Logo](https://www.pngitem.com/pimgs/m/132-1322125_transparent-background-airbnb-logo-hd-png-download.png)
-
 ## Project Description
 This is the README.md for the holbertonschool-AirBnBP_clone project.
 Where the Data (python objects) generated are stored in a json file and can be accessed with the help of the json module in python
