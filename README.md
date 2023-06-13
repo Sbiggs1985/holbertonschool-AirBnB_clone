@@ -23,6 +23,6 @@ And as part of the implementation of the command line interpreter coupled with t
 
 ## Authors
 
-Stephanie Biggs | Email: 6141@holbertonstudents.com
+Stephaine Biggs | Email: 6141@holbertonstudents.com
 
 Kristina Veltri | Email: 6120@holbertonstudents.com
